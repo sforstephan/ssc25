@@ -41,8 +41,8 @@ Fixed parameters in this analysis:
 |----------------|----------|-------------|--------|
 | `cost_of_effort_beta` | $\beta_c$ | Slope parameter in the logistic function linking motivation to cost of effort | 2 |
 | `capability_decay_k` | $\kappa^{\text{cap}}$ | Parameter determining how rapidly learning efficiency declines with increasing capability | 2 |
-| `relative_deprivation_effects_on_motivation_and_effort_threshold` | $\theta_{RD}$ | Threshold beyond which relative deprivation significantly reduces motivation | 0.5 |
-| `relative_deprivation_effects_on_motivation_and_effort_sensitivity` | $\lambda_{RD}$ | Steepness of the RD effect curve | 5 |
+| `relative_deprivation_threshold` | $\theta_{RD}$ | Threshold beyond which relative deprivation significantly reduces motivation | 0.5 |
+| `relative_deprivation_sensitivity` | $\lambda_{RD}$ | Steepness of the RD effect curve | 5 |
 | `incentive_update_interval` | $T_{\mathcal{I}}$ | Time steps between incentive updates | 5 |
 | `root_resources` | $R_{\text{root}}$ | Resources of root agent that are further allocated to subordinates | 100 |
 
