@@ -1,28 +1,71 @@
-# Time Step Stabilization Analysis
+# Stabilization Analysis
 
 ## Objective
 
-The objective of this analysis is to determine the number of time steps required until the outputs of the simulation model stabilize. Stabilization refers to the point after which key outcome metrics show only minimal fluctuations, indicating that the system has reached a steady state. This information helps reduce unnecessary computation in future experiments by avoiding overly long simulations.
+This analysis investigates when the simulation outputs stabilize both over time and across repetitions. The goal is to identify:
 
-## Method
+1. **The minimum number of time steps** required before the output reaches a steady state.
+2. **The number of repetitions** needed to obtain reliable aggregate statistics.
 
-To assess stabilization, we rely on the **coefficient of variation (CV)** computed over moving windows of simulation output. The CV is defined as:
+## Time Series Stabilization (Over Steps)
 
+### Method
+
+To determine when the system reaches a stable state, we perform a **Phillips–Perron (PP) test** for stationarity on each output metric. The test is applied on time series averaged across agents (for each run), using a moving window approach.
+
+- **Test used**: Phillips–Perron (trend-stationarity, test type = `rho`)
+- **Data**: Agent-level output, averaged across agents within each step and run.
+- **Window size**: 600 steps  
+- **Step size**: 100 steps  
+- **Stationarity criterion**: The earliest step where the PP test detects stationarity and it persists until step 4000.
+
+## Repetition-Based Stability (Across Runs)
+
+### Method
+
+Once the stable time window is identified, we assess how many **independent simulation runs** are needed to obtain reliable estimates of each output metric. We use the **coefficient of variation (CV)** across increasing numbers of runs:
 
 $CV = \frac{\sigma}{\mu}$
 
-Where $\sigma$ is the standard deviation and $\mu$ is the mean of the time series within the window. A smaller CV indicates less variability, suggesting that the output is stabilizing.
+Where:
+- $\mu$: mean of the metric across runs  
+- $\sigma$: standard deviation across runs  
+- CV$: normalized dispersion of the output values
 
-The analysis uses the following approach:
-- Simulate the model for a long time horizon (4000 steps).
-- Compute the mean of each outcome variable at each step across 200 runs.
-- Slide a window (default size = 600, step size = 100) over the time series.
-- Calculate the CV within each window.
-- Identify the earliest window where CV drops below a predefined threshold (e.g., 0.05) and remains below it until the end.
+We track how the CV evolves as we increase the number of runs $n$, using the stabilized time window only.
+
+### Comparison Approach
+
+To determine whether a particular number of runs $n$ is sufficient, we compute:
+
+
+$\Delta CV = |CV_{n} - CV_{n+\delta}|$
+
+
+Where:
+- $CV_{n}$ is the CV computed using $n$ runs
+- $CV_{n+\delta}$ is the CV using a larger number of runs 
+- If $\Delta CV < \varepsilon$, the outcome is considered stable with $n$ repetitions
+
+Typical thresholds:
+- $\varepsilon = 0.005$
+- $\delta = 25$
+
+## Outputs Analyzed
+
+The following metrics were evaluated for stabilization:
+
+- Effort  
+- Capability  
+- Evaluation  
+- Performance  
+- Informal Resources  
+- Motivation  
+- Relative Deprivation  
+- Utility  
+
 
 ## Parameters
-
-### Full Parameter Table
 
 ## Parameter Overview
 
