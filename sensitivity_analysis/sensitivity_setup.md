@@ -37,14 +37,15 @@ To identify which model parameters most influence individual-level and system-le
 
 Fixed parameters in this analysis: 
 
-| Parameter Name | Notation | Description | Value |
-|----------------|----------|-------------|--------|
-| `cost_of_effort_beta` | $\beta_c$ | Slope parameter in the logistic function linking motivation to cost of effort | 2 |
-| `capability_decay_k` | $\kappa^{\text{cap}}$ | Parameter determining how rapidly learning efficiency declines with increasing capability | 2 |
-| `relative_deprivation_threshold` | $\theta_{RD}$ | Threshold beyond which relative deprivation significantly reduces motivation | 0.5 |
-| `relative_deprivation_sensitivity` | $\lambda_{RD}$ | Steepness of the RD effect curve | 5 |
-| `incentive_update_interval` | $T_{\mathcal{I}}$ | Time steps between incentive updates | 5 |
-| `root_resources` | $R_{\text{root}}$ | Resources of root agent that are further allocated to subordinates | 100 |
+| Parameter Name                | Notation                  | Description                                                                 | Value |
+|------------------------------|---------------------------|-----------------------------------------------------------------------------|--------|
+| `cost_of_effort_beta`        | $\beta_c$                 | Slope parameter in the logistic function linking motivation to cost of effort | 2      |
+| `cost_of_information_sharing` | $c^{\text{sharing}}_i$ | Fixed cost for agent $i$ when sharing informal resources with others | 0.1 |
+| `capability_decay_k`         | $\kappa^{\text{cap}}$     | Parameter determining how rapidly learning efficiency declines with increasing capability | 2 |
+| `incentive_update_interval`  | $T_{\mathcal{I}}$         | Time steps between incentive updates                                        | 5      |
+| `root_resources`             | $R_{\text{root}}$         | Resources of root agent that are further allocated to subordinates          | 100    |
+| `delta_centrality`           | $\delta^{\text{centrality}}$ | Scaling parameter controlling the influence of network centrality in evaluation bias | 0.1 |
+
 
 
 
