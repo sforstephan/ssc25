@@ -1,4 +1,4 @@
-# Stabilization Analysis
+# Stabilization analysis
 
 ## Objective
 
@@ -7,7 +7,7 @@ This analysis investigates when the simulation outputs stabilize both over time 
 1. **The minimum number of time steps** required before the output reaches a steady state.
 2. **The number of repetitions** needed to obtain reliable aggregate statistics.
 
-## Time Series Stabilization (Over Steps)
+## Time series stabilization (over steps)
 
 ### Method
 
@@ -19,7 +19,7 @@ To determine when the system reaches a stable state, we perform a **Phillips–P
 - **Step size**: 100 steps  
 - **Stationarity criterion**: The earliest step where the PP test detects stationarity and it persists until step 4000.
 
-## Repetition-Based Stability (Across Runs)
+## Repetition-based stability (across runs)
 
 ### Method
 
@@ -34,7 +34,7 @@ Where:
 
 We track how the CV evolves as we increase the number of runs $n$, using the stabilized time window only.
 
-### Comparison Approach
+### Comparison approach
 
 To determine whether a particular number of runs $n$ is sufficient, we compute:
 
@@ -51,7 +51,7 @@ Considered thresholds:
 - $\varepsilon = 0.005$
 - $\delta = 25$
 
-## Outputs Analyzed
+## Outputs analyzed
 
 The following metrics were evaluated for stabilization:
 
@@ -67,7 +67,7 @@ The following metrics were evaluated for stabilization:
 
 ## Parameters
 
-## Parameter Overview
+## Parameter overview
 
 | Parameter Name | Notation | Description | Value |
 |----------------|----------|-------------|--------|
@@ -96,22 +96,7 @@ The following metrics were evaluated for stabilization:
 
 
 
-
-
-## Outputs Analyzed
-The following agent-level metrics are analyzed to assess stabilization:
-- Effort
-- Capability
-- Evaluation
-- Performance
-- Informal Resources
-- Motivation
-- Relative Deprivation
-- Utility
-
-Each metric is averaged across agents for each time step and analyzed for stabilization trends using the CV.
-
-## Simulation Infrastructure
+## Simulation infrastructure
 
 - 200 simulation runs
 - 4000 time steps per run

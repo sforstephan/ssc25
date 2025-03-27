@@ -6,12 +6,12 @@ The analysis focuses on identifying which model parameters most strongly influen
 
 The **Morris method** implemented via `SALib` was used for the analysis. Simulations were executed in parallel and the outputs were stored in a PostgreSQL database.
 
-## Folder Contents
+## Folder contents
 
 - `sensitivity_setup.md`: Description of the experimental design, parameters, and methodology
 - `sensitivity_results.md`: Results of the sensitivity analysis
 
-## Analysis Summary
+## Analysis summary
 
 In the sensitivity analysis, 16 parameters were tested across 75 Morris trajectories (`N = 75`, `levels = 4`). Results show that:
 

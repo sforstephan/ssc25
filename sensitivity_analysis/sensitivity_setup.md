@@ -11,9 +11,9 @@ To identify which model parameters most influence individual-level and system-le
 - **Trajectories (N)**: 75
 - **Steps per simulation**: 2400 (based on stationarity analysis)
 
-## Parameters Varied (16 total)
+## Parameters varied (16 total)
 
-### Morris Sensitivity Analysis – Parameter Ranges
+### Morris sensitivity analysis – parameter ranges
 
 | Parameter Name | Notation | Description | Range |
 |----------------|----------|-------------|--------|
@@ -49,7 +49,7 @@ Fixed parameters in this analysis:
 
 
 
-## Outputs Analyzed
+## Outputs analyzed
 
 We computed Morris indices for the following outcome variables (averaged across all agents and time):
 
@@ -62,7 +62,7 @@ We computed Morris indices for the following outcome variables (averaged across 
 - **Relative Deprivation**
 - **Utility**
 
-## Simulation Infrastructure
+## Simulation infrastructure
 
 - ABM implemented in Python using Mesa
 - Results stored in PostgreSQL
