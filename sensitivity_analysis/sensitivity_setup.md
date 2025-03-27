@@ -13,7 +13,7 @@ To identify which model parameters most influence individual-level and system-le
 
 ## Parameters Varied (16 total)
 
-### 📊 Morris Sensitivity Analysis – Parameter Ranges
+### Morris Sensitivity Analysis – Parameter Ranges
 
 | Parameter | Description | Range |
 |----------|-------------|-------|
@@ -55,6 +55,4 @@ We computed Morris indices for the following outcome variables (averaged across 
 - Simulations run in parallel using multiprocessing
 - Data post-processed and exported to Excel
 
-## Results
 
-Table 1
