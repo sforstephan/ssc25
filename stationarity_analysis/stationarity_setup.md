@@ -30,7 +30,7 @@ $CV = \frac{\sigma}{\mu}$
 Where:
 - $\mu$: mean of the metric across runs  
 - $\sigma$: standard deviation across runs  
-- CV$: normalized dispersion of the output values
+- $CV$: normalized dispersion of the output values
 
 We track how the CV evolves as we increase the number of runs $n$, using the stabilized time window only.
 
@@ -47,7 +47,7 @@ Where:
 - $CV_{n+\delta}$ is the CV using a larger number of runs 
 - If $\Delta CV < \varepsilon$, the outcome is considered stable with $n$ repetitions
 
-Typical thresholds:
+Considered thresholds:
 - $\varepsilon = 0.005$
 - $\delta = 25$
 
