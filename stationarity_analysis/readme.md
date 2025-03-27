@@ -30,3 +30,5 @@ To assess how many simulation runs are necessary for stable averages, the **coef
 - The CV is defined as $CV = \frac{\sigma}{\mu}$ and reflects the relative variability across repetitions.
 - The analysis showed that from **75 runs onwards**, the CV falls below a predefined stability threshold for all core metrics.
 - As a result, **75 runs** were selected as the baseline for scenario experiments and sensitivity analysis.
+
+
