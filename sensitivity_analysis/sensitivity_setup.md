@@ -55,6 +55,6 @@ We computed Morris indices for the following outcome variables (averaged across 
 - Simulations run in parallel using multiprocessing
 - Data post-processed and exported to Excel
 
-## Results Summary
+## Results
 
-[Add bullet-point summary or chart snippet]
+Table 1

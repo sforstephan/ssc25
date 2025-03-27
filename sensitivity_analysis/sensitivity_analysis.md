@@ -1,4 +1,4 @@
-# Sensitivity Analysis
+# Setup of the sensitivity analysis
 
 This folder contains the documentation and results of a global sensitivity analysis for an agent-based model (ABM) in this repository.
 
