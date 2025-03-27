@@ -20,7 +20,7 @@ In the sensitivity analysis, 16 parameters were tested across 75 Morris trajecto
 - **`capability_growth_beta`** also showed strong influence on **Capability**, **Effort**, **Evaluation**, **Performance**, **Motivation**, and **Utility**.
 - **`number_agents`** meaningfully affected **Evaluation**, **Performance**, **Utility**, and **Effort**.
 - **`informal_resources_sharing_fraction`** had a substantial impact on **Informal Resources**, and also influenced **Effort**, **Evaluation**, **Performance**, and **Utility** to a lesser extent.
-- **`relative_deprivation_effects_on_motivation_and_effort_threshold`** and **`relative_deprivation_effects_on_motivation_and_effort_sensitivity`** were key behavioral parameters affecting **Motivation**, with `threshold` also impacting **Utility** and **Performance**.
+- **`relative_deprivation_threshold`** and **`relative_deprivation_sensitivity`** were key behavioral parameters affecting **Motivation**, with `threshold` also impacting **Utility** and **Performance**.
 
 
 
