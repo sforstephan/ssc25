@@ -40,18 +40,18 @@ The analysis uses the following approach:
 | `capability_decay_gamma` | $\gamma^{\text{cap}}$ | Rate at which an agent’s capability decays over time | 0.05 |
 | `capability_decay_k` | $\kappa^{\text{cap}}$ | Parameter determining how rapidly learning efficiency declines with increasing capability | 2 |
 | `decay_factor_reciprocity` | $\kappa^{\text{RS}}$ | Decay factor for reciprocity scores over time | 0.05 |
-| `relative_deprivation_effects_on_motivation_and_effort_sensitivity` | $\lambda_{RD}$ | Sensitivity parameter for the effect of relative deprivation on motivation and effort | 5 |
+| `relative_deprivation_sensitivity` | $\lambda_{RD}$ | Sensitivity parameter for the effect of relative deprivation on motivation and effort | 5 |
 | `resource_allocation_lambda` | $\lambda_f$ | Share of an agent’s formal resources allocated to subordinates in the formal hierarchy | 0.9 |
 | `learning_effect_on_capability` | $\lambda_{\text{cap}}$ | Base learning rate determining how quickly capability increases given available resources | 0.1 |
 | `number_agents` | $N$ | Number of employee agents | 50 |
-| `hierarchical_structure.average_subordinates` | $N_{\text{sub}}$ | Number of subordinates per manager | 6 |
+| `average_subordinates` | $N_{\text{sub}}$ | Number of subordinates per manager | 6 |
 | `effort_social_influence_weight` | $\omega$ | Weight placed on peers’ effort levels in the social influence component of effort updates | 0.05 |
 | `decay_factor_reciprocity` | $\rho$ | Decay factor for reciprocity scores (reused from above) | 0.05 |
 | `root_resources` | $R_{\text{root}}$ | Resources of root agent that are further allocated to subordinates | 100 |
 | `incentive_update_interval` | $T_{\mathcal{I}}$ | Time steps between incentive updates | 5 |
 | `similarity_scaling_factor` | $\theta^{\text{similarity}}$ | Scaling factor for Jaccard similarity in informal network creation | 2.5 |
 | `centrality_in_evaluation` | $\theta^{\text{centrality}}$ | Scaling factor for the effect of the network centrality in the evaluation of agents | Enabled (True) |
-| `relative_deprivation_effects_on_motivation_and_effort_threshold` | $\theta_{RD}$ | Threshold beyond which relative deprivation significantly reduces motivation | 0.5 |
+| `relative_deprivation_threshold` | $\theta_{RD}$ | Threshold beyond which relative deprivation significantly reduces motivation | 0.5 |
 
 
 
