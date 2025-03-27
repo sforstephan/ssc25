@@ -19,8 +19,4 @@ In the sensitivity analysis, 16 parameters were tested across 75 Morris trajecto
 - **Relative deprivation sensitivity** and **capability decay** were major drivers of performance variability
 - Informal network structure (e.g., rewiring probability) had measurable but secondary effects
 
-## Citation
 
-If you use these results, please cite:
-
-> [Your Name], “Sensitivity Analysis of Organizational ABM with Similarity-Based Informal Networks,” [Conference/Paper Name], 2025.
