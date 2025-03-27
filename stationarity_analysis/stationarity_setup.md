@@ -8,11 +8,10 @@ The objective of this analysis is to determine the number of time steps required
 
 To assess stabilization, we rely on the **coefficient of variation (CV)** computed over moving windows of simulation output. The CV is defined as:
 
-\[
-CV = \frac{\sigma}{\mu}
-\]
 
-Where \(\sigma\) is the standard deviation and \(\mu\) is the mean of the time series within the window. A smaller CV indicates less variability, suggesting that the output is stabilizing.
+$CV = \frac{\sigma}{\mu}$
+
+Where $\sigma$ is the standard deviation and $\mu$ is the mean of the time series within the window. A smaller CV indicates less variability, suggesting that the output is stabilizing.
 
 The analysis uses the following approach:
 - Simulate the model for a long time horizon (4000 steps).
