@@ -33,7 +33,6 @@ The analysis uses the following approach:
 | `cost_of_effort_beta` | $\beta_c$ | Slope parameter in the logistic function linking motivation to cost of effort | 2 |
 | `capability_growth_beta` | $\beta^{\text{cap}}$ | Weight placed on formal (vs. informal) resources in the learning process affecting capability growth | 0.5 |
 | `cost_of_information_sharing` | $c^{\text{sharing}}_i$ | Fixed cost for agent $i$ when sharing informal resources with others | 0.1 |
-| `centrality_in_evaluation` | $\delta^{\text{centrality}}$ | Scaling parameter controlling the influence of network centrality in evaluation bias | Enabled (True) |
 | `informal_resources_sharing_fraction` | $\delta^{\text{informal}}$ | Fraction of informal resources an agent is willing to share in each time step | 0.1 |
 | `informal_resources_depletion_rate` | $\delta_I$ | Depletion rate for informal resources | 0.05 |
 | `formal_resources_depletion_rate` | $\delta_F$ | Depletion rate for formal resources | 0.6 |
@@ -50,7 +49,6 @@ The analysis uses the following approach:
 | `root_resources` | $R_{\text{root}}$ | Resources of root agent that are further allocated to subordinates | 100 |
 | `incentive_update_interval` | $T_{\mathcal{I}}$ | Time steps between incentive updates | 5 |
 | `similarity_scaling_factor` | $\theta^{\text{similarity}}$ | Scaling factor for Jaccard similarity in informal network creation | 2.5 |
-| `centrality_in_evaluation` | $\theta^{\text{centrality}}$ | Scaling factor for the effect of the network centrality in the evaluation of agents | Enabled (True) |
 | `relative_deprivation_threshold` | $\theta_{RD}$ | Threshold beyond which relative deprivation significantly reduces motivation | 0.5 |
 
 
