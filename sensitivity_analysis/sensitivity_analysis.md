@@ -13,10 +13,16 @@ The **Morris method** implemented via `SALib` was used for the analysis. Simulat
 
 ## Analysis Summary
 
-In the sensitivity analysis, 16 parameters were tested across 75 Morris trajectories (N = 75, levels = 4). Results show that:
+In the sensitivity analysis, 16 parameters were tested across 75 Morris trajectories (`N = 75`, `levels = 4`). Results show that:
 
-- **[X Parameter]** had the strongest impact on [Y outcome]
-- **Relative deprivation sensitivity** and **capability decay** were major drivers of performance variability
-- Informal network structure (e.g., rewiring probability) had measurable but secondary effects
+- **`capability_decay_gamma`** had the strongest and most consistent impact across multiple outcomes, including **Capability**, **Effort**, **Evaluation**, **Performance**, and **Utility**.
+- **`resource_allocation_lambda`** was another dominant driver, significantly influencing **Effort**, **Evaluation**, **Performance**, **Motivation**, **Relative Deprivation**, and **Utility**.
+- **`capability_growth_beta`** also showed strong influence on **Capability**, **Effort**, **Evaluation**, **Performance**, **Motivation**, and **Utility**.
+- **`number_agents`** meaningfully affected **Evaluation**, **Performance**, **Utility**, and **Effort**.
+- **`informal_resources_sharing_fraction`** had a substantial impact on **Informal Resources**, and also influenced **Effort**, **Evaluation**, **Performance**, and **Utility** to a lesser extent.
+- **`relative_deprivation_effects_on_motivation_and_effort_threshold`** and **`relative_deprivation_effects_on_motivation_and_effort_sensitivity`** were key behavioral parameters affecting **Motivation**, with `threshold` also impacting **Utility** and **Performance**.
+
+
+
 
 
