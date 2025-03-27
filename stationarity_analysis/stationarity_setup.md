@@ -39,6 +39,7 @@ The analysis uses the following approach:
 | `capability_decay_gamma` | $\gamma^{\text{cap}}$ | Rate at which an agent’s capability decays over time | 0.05 |
 | `capability_decay_k` | $\kappa^{\text{cap}}$ | Parameter determining how rapidly learning efficiency declines with increasing capability | 2 |
 | `decay_factor_reciprocity` | $\kappa^{\text{RS}}$ | Decay factor for reciprocity scores over time | 0.05 |
+| `delta_centrality`                 | $\delta^{\text{centrality}}$       | Scaling parameter controlling the influence of network centrality in evaluation bias              | 0.1 |
 | `relative_deprivation_sensitivity` | $\lambda_{RD}$ | Sensitivity parameter for the effect of relative deprivation on motivation and effort | 5 |
 | `resource_allocation_lambda` | $\lambda_f$ | Share of an agent’s formal resources allocated to subordinates in the formal hierarchy | 0.9 |
 | `learning_effect_on_capability` | $\lambda_{\text{cap}}$ | Base learning rate determining how quickly capability increases given available resources | 0.1 |
@@ -50,6 +51,7 @@ The analysis uses the following approach:
 | `incentive_update_interval` | $T_{\mathcal{I}}$ | Time steps between incentive updates | 5 |
 | `similarity_scaling_factor` | $\theta^{\text{similarity}}$ | Scaling factor for Jaccard similarity in informal network creation | 2.5 |
 | `relative_deprivation_threshold` | $\theta_{RD}$ | Threshold beyond which relative deprivation significantly reduces motivation | 0.5 |
+
 
 
 
