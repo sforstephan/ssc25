@@ -20,7 +20,3 @@ This document describes:
 - Process overview and scheduling
 - Design concepts (e.g., adaptation, learning, interaction)
 - Submodels and equations
-
-
-
-
