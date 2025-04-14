@@ -1,4 +1,4 @@
-# ssc2# Who gets to be good?
+# Who gets to be good?
 
 This repository contains the online materials for the paper:
 

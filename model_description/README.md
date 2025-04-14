@@ -21,3 +21,6 @@ This document describes:
 - Design concepts (e.g., adaptation, learning, interaction)
 - Submodels and equations
 
+
+
+
